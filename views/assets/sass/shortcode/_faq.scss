@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+## FAQ_Page_Style
+----------------------------------------------------------------*/
+.according-container{
+    max-width: 60%;
+    justify-content: space-between;
+    .accordion-item{
+        h2{
+            font-size: 22px;
+            line-height: 1.8rem;
+            cursor: pointer;
+        }
+        .accordion-body{
+            background: $bg;
+            p{
+                color: $body-text;
+            }
+        }
+    }
+    
+}
+.accordion-button:not(.collapsed) {
+    color: $primary;
+    background-color: $white-text;
+    box-shadow: none;
+}
+@media screen and (max-width: 1199px) {
+    .according-container{
+        max-width: 95%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .according-container{
+        max-width: 95%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .according-container{
+        max-width: 95%;
+    }
+}

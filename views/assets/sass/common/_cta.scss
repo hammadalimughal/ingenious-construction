@@ -1,0 +1,30 @@
+/*--------------------------------------------------------------
+## CTA_Style
+----------------------------------------------------------------*/
+.cta{
+    .cta-content{
+        background-image: url(/assets/img/cta.jpg);
+        background-position: center;
+        object-fit: cover;
+        padding: 6rem 0rem;
+    }
+    p{
+        max-width: 800px;
+        display: inline-block;
+    }
+    a{
+        margin-top: 25px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .cta{
+        p{
+            max-width: 90%;
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .cta-content{
+       padding: 2rem !important;
+    }
+}

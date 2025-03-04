@@ -1,0 +1,119 @@
+/*--------------------------------------------------------------
+## Service_Section_Style
+----------------------------------------------------------------*/
+.cs-services{
+    background-color: $primary;
+    background-image: url(/assets/img/line-2.png);
+    background-position: center;
+    .services{
+        border-left: 1px solid $bg;
+        border-top: 1px solid $bg;
+        .service{
+            background-color: $primary;
+            padding: 3.6rem 3rem;
+            cursor: pointer;
+            p{
+                margin-top: 1rem;
+            }
+            .s-btn{
+                display: flex;
+                justify-content: space-between;
+                padding-top: 5rem;
+                svg:hover path {
+                    fill: $accent;
+                    transition: 0.3s ease-out;
+                  }
+            }
+        }
+    }
+}
+  .marquee-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .marquee-text {
+    display: inline-block;
+    color: $white-text;
+    font-size: 18px;
+    margin: 5rem 0rem;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    span{
+        margin-right: 3rem;
+    }
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+.s-bg-1:hover{
+    background-image: url(/assets/img/service-bg-hover-1.jpg);
+    background-position: bottom;
+    transition: all 0.8s ease-out;
+}
+.s-bg-2{
+    background-image: url(/assets/img/s-bg-2.jpg);
+    background-position: bottom;
+}
+.s-bg-2:hover{
+    background-image: url(/assets/img/service-bg-hover-2.jpg);
+    background-position: bottom;
+    transition: all 0.8s ease-out;
+}
+.s-bg-3{
+    background-image: url(/assets/img/s-bg-3.png);
+    background-position: bottom;
+}
+.s-bg-3:hover{
+    background-image: url(/assets/img/service-bg-hover-3.jpg);
+    background-position: bottom;
+    transition: all 0.8s ease-out;
+}
+.s-bg-4:hover{
+    background-image: url(/assets/img/service-bg-hover-4.jpg);
+    background-position: bottom;
+    transition: all 0.8s ease-out;
+}
+.s-bg-5:hover{
+    background-image: url(/assets/img/service-bg-hover-5.jpg);
+    background-position: bottom;
+    transition: all 0.8s ease-out;
+}
+.s-bg-6{
+    background-image: url(/assets/img/s-bg-6.jpg);
+    background-position: bottom;
+}
+.s-bg-6:hover{
+    background-image: url(/assets/img/service-bg-hover-6.jpg);
+    background-position: bottom;
+    transition: all 0.8s ease-out;
+}
+@media screen and (max-width: 1199px) {
+    .s-btn{
+        padding-top: 1rem !important;
+    }
+}
+@media screen and (max-width: 991px) {
+    .service-harea{
+        padding-bottom: 3rem;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .service{
+        padding: 3rem 1.5rem !important;
+    }
+    .services{
+        margin-top: 3rem !important;
+    }
+    .s-btn{
+        padding-top: 1rem !important;
+    }
+}

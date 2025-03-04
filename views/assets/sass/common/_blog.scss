@@ -1,0 +1,101 @@
+/*--------------------------------------------------------------
+## Blog_Style
+----------------------------------------------------------------*/
+.h-blog{
+    .blog-content{
+        .ha-blog{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h2{
+                max-width: 80%;
+            }
+        }
+    }
+}
+.p-box{
+    padding: 3rem;
+    background-color: $primary;
+    h6{
+        color: $white-text;
+    }
+    .b-border{
+        width: 17px;
+        height: 3px;
+        background: $accent;
+        display: inline-block;
+    } 
+}
+.blog-content{
+    justify-content: space-between;
+}
+.b-details-content{
+    max-width: 800px;
+    .info{
+        display: flex;
+        margin-bottom: 3rem;
+        a{
+            margin-right: 30px;
+        }
+    }
+    p{
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .b-images{
+        max-width: 800px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .b-line{
+        width: 100%;
+        height: 1px;
+        background: $accent;
+        display: inline-block;
+    }
+    .b-social{
+        display: flex;
+        align-items: center;
+        p{
+            margin-right: 30px;
+        }
+        a{
+            margin-right: 20px;
+            i{
+                color: $white-text;
+            }
+        }
+        a:hover{
+            margin-right: 20px;
+            i{
+                color: $accent;
+                transition: 0.3s ease-in-out;
+            }
+        }
+
+    }
+}
+@media screen and (max-width: 767px){
+    .p-box{
+        padding: 2rem;
+        .b-border{
+            width: 100px;
+        } 
+    } 
+}
+@media screen and (max-width: 991px){
+    .box-inner{
+        margin-bottom: 20px;
+    }
+    .box-inner-2{
+        margin-bottom: 20px;  
+    }
+    .ha-blog{
+        h2{
+            width: 70%;
+        }
+    }
+    .b-images{
+        width: 50%;
+    }
+}

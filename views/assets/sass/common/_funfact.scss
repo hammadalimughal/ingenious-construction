@@ -1,0 +1,65 @@
+/*--------------------------------------------------------------
+## Funfact_Section_Style
+----------------------------------------------------------------*/
+.cs-funfact{
+    background-color: $primary;
+    background-image: url(/assets/img/line-2.png);
+    background-position: center;
+    margin: 10rem 0rem;
+    .fun-head{
+        margin-bottom: 3rem;
+        p{
+            padding: 1rem;
+            padding-top: 0px;
+        }
+    }
+    .item-container{
+        border-top: 1px solid $bg;
+        .fun-item{
+            padding: 3rem 2rem 2rem 3rem;
+            .counter-container{
+                .counter{
+                    font-size: 100px;
+                    line-height: 120px;
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: bold;
+                    padding-bottom: 15px;
+                    color: $white-text;
+                }
+            }
+            p{
+                font-size: 100px;
+                line-height: 120px;
+                font-family: 'DM Sans', sans-serif;
+                font-weight: bold;
+                color: $white-text;
+                float: left;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1199px) {
+    .item-container{
+        border: none;
+        .fun-item{
+            padding: 0rem !important;
+            .counter{
+                font-size: 70px !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .fun-item{
+        margin: 2rem 0rem;
+    }
+    .cs-funfact .fun-head p {
+        padding: 1rem 0rem;
+    }
+}
+@media screen and (max-width: 767px) {
+    .cs-funfact{
+        margin: 5rem 0rem;
+    }
+}

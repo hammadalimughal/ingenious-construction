@@ -1,0 +1,104 @@
+/*--------------------------------------------------------------
+## Contact_Page_Style
+----------------------------------------------------------------*/
+.office-box{
+    h6{
+        color: $body-text;
+    }
+}
+.details-content{
+    margin-left: 280px;
+    .d-phone{
+        margin-bottom: 5rem;
+        p{
+            font-size: 32px;
+            font-weight: bold;
+            color: $white-text;
+            margin: 20px 0px;
+        }
+    }
+    .d-email{
+        margin-bottom: 5rem;
+    }
+    h6{
+        color: $body-text;
+    }
+}
+.contact-form{
+    background-color: $primary;
+    width: 70vw;
+    margin-left: -280px;
+    padding: 3rem;
+    .form-row{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        .input-control{
+            display: flex;
+            flex-direction: column;
+            width: 47%;
+        }
+    }
+}
+.input-control{
+    label{
+        margin-bottom: 0px;
+        color: $white-text;
+        font-size: 16px;
+    }
+    input{
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $border;
+        padding: 1rem 0rem;
+        font-size: 16px;
+    }
+}
+.i-msg input{
+    width: 100%;
+    margin-bottom: 3rem;
+    padding-bottom: 7rem;
+}
+.cs-contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media screen and (max-width: 1199px) {
+    .cs-contact{
+        flex-direction: column;
+    }
+    .details-content{
+        margin-left: 0px;
+        .d-phone{
+            margin-bottom: 3rem;
+        }
+        .d-email{
+            margin-bottom: 3rem;
+        }
+    }
+    .contact-form{
+        width: 90%;
+        margin-left: 0px;
+        margin-top: 5rem;
+    }
+    .contact-img{
+        img{
+            width: 95%;
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .contact-form{
+        width: 90%;
+    }
+    .office-box :first-child{
+        margin-bottom: 20px;
+    }
+    .contact-img{
+        img:first-child{
+            padding-bottom: 2rem;
+        }
+    }
+}

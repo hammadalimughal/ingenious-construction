@@ -1,0 +1,164 @@
+/*--------------------------------------------------------------
+## Team_Page&Section_Style
+----------------------------------------------------------------*/
+    .members{
+    display: flex;
+    text-align: center;
+    padding: 0px;
+    }
+    .t-content{
+        align-items: center;
+    }
+    .member{
+        text-align: center;
+        .tm-img-box{
+          position: relative;
+            img{
+                padding-bottom: 20px;
+            }
+            ul{
+                position: absolute;
+                left: 0;
+                bottom: 30px;
+                right: 0;
+                opacity: 0;
+                transition: ease-in-out 0.3s;
+                display: flex;
+                justify-content: center;
+                a{
+                    display: inline-block;
+                    font-size: 16px;
+                    padding: 10px 1rem;
+                    border-radius: 1rem;
+                    background-color: $primary;
+                    margin: 1px 5px;
+                }
+            }
+        }
+        .tm-img-box:hover{
+            img{
+                opacity: 0.4;
+                cursor: pointer;
+                transition: ease-in-out 0.3s;
+                width: 100%;
+            }
+            
+            ul{
+                opacity: 1;
+                bottom: 15px;
+            }
+        }
+        h5{
+            margin-bottom: 1px;
+        }
+    }
+    .member-social{
+        a{
+            background-color: $primary;
+            padding: 10px;
+            border-radius: 10rem;
+        }
+        svg{
+            color: $white-text;
+        }
+    }
+    .t-mid{
+        width: 35%;
+        padding: 1rem;
+        img{
+           margin-top: 2rem;
+        }
+    }
+    .team-balance1{
+        margin-top: 2rem;
+        padding: 2rem 2rem 0rem 2rem;
+    }
+    .team-balance2{
+        margin-top: 2rem;
+        padding: 0rem 0rem 0rem 2rem;
+    }
+.co-progress{
+    .progress-bar{
+        margin-bottom: 20px;
+        .bar{
+            margin: 05px 0;
+            text-align: left;
+        }
+    }
+    .progress-line{
+        position: relative;
+        background: $white-text;
+        height: 4px;
+        text-align: left; 
+        transform: scaleX(0);
+        transform-origin: left;
+        animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;              
+        span{
+            background: $accent;
+            height: 4px;
+            position: absolute;
+            width: 90%;
+        }
+        span::after{
+            position: absolute;
+            content: "90%";
+            right: 0;
+            top: -35px;
+            color: $white-text;
+        }
+    }
+    .cs-pline1 span{
+        width: 85%;
+    }
+    .cs-pline1 span::after{
+        content: "85%";
+    }
+    .cs-pline2 span{
+        width: 95%;
+    }
+    .cs-pline2 span::after{
+        content: "95%";
+    }
+}
+@keyframes animate {
+100% {
+transform: scaleX(1);
+}
+100% {
+width: 100%;
+}
+}
+@media screen and (max-width: 1199px) {
+    .cs-t-head{
+        width: 100vw;
+    }
+    .members{
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+@media screen and (min-width: 991px) {
+    .team-first-row{
+        padding-bottom: 2.5rem;
+    }
+}
+@media screen and (max-width: 767px) {
+    .cs-padding-3{
+        padding-top: 3rem;
+    }
+    .team-balance1{
+        margin-top: 0rem;
+        padding: 0rem;
+    }
+    .team-balance2{
+        margin-top: 0rem;
+        padding: 0rem;
+    }
+    .members-main-page{
+        display: flex;
+        flex-direction: column;
+    }
+    .member-main-page{
+        width: 100%;
+    }
+}

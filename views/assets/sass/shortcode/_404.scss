@@ -1,0 +1,46 @@
+/*--------------------------------------------------------------
+## 404 Error Page_Style
+----------------------------------------------------------------*/
+.full-height{
+    text-align: center;
+    .error-content{
+        max-width: 1000px;
+        span{
+            font-size: 15rem;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: bold;
+            color: $white-text;
+        }
+        h2{
+            padding: 2rem 0rem;
+        }
+        p{
+            padding-bottom: 2rem;
+        }
+    }
+}
+@media screen and (max-width: 1199px) {
+    .error-content{
+        span{
+            font-size: 8rem !important;
+           }
+    }
+}
+@media screen and (max-width: 767px) {
+    .error-content{
+        margin-top:5rem;
+        span{
+            font-size: 5rem;
+           }
+    }
+}
+@media screen and (max-width: 491px) {
+    .error-content{
+        span{
+            font-size: 2rem;
+        }
+        p{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+/*--------------------------------------------------------------
+## Work_Process_Section_Style
+----------------------------------------------------------------*/
+.process{
+    .st-htext{
+        position: relative;
+        h2{
+            font-size: 150px;
+            color: transparent;
+            text-align: center;
+            z-index: 1;
+            position: absolute;
+            -webkit-text-stroke-width: 0.3px;
+            -webkit-text-stroke-color: $body-text;
+            opacity: 30%;
+            margin-top: 3rem;
+        }
+    }
+    .steps{
+        .step{
+            padding: 0rem 4rem;
+            h2{
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 400;
+                color: $bg;
+                font-size: 80px;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: $accent;
+                margin-bottom: 1.5rem;
+            }
+            h4{
+                margin-bottom: 10px;
+            }
+            p{
+                color: $body-text;
+            }
+        }
+    }
+    .step-mid{
+        margin-top: 3rem;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .step{
+        padding: 0rem 1rem !important;
+    }
+    .st-htext{
+        h2{
+            font-size: 120px !important;
+        }
+    }
+}

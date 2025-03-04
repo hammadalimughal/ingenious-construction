@@ -1,0 +1,71 @@
+/*--------------------------------------------------------------
+## Testimonial_Section_Style
+----------------------------------------------------------------*/
+.sec-testi{
+    background-color: $primary;
+    background-image: url(/assets/img/line-2.png);
+    background-position: center;
+    .testi-content{
+        margin-left: 5rem;
+        svg{
+            margin-bottom: 3rem;
+        }
+        p{
+            font-size: 18px;
+            line-height: 30px;
+        }
+        .client-details{
+            margin-top: 2.5rem;
+            h5{
+                margin-bottom: 5px;
+            }
+            p{
+                color: $body-text;
+            }
+        }
+    }
+}
+.t-arrow{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    .left{
+        margin-right: 1rem;
+    }
+    .left:hover svg{
+        background-color: $accent;
+        border-radius: 60px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    .right:hover svg{
+        background-color: $accent;
+        border-radius: 60px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+}
+.testimonial-item{
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 1199px) {
+    .testi-content{
+        margin-left: 0rem !important;
+    }
+}
+@media screen and (max-width: 991px) {
+    .testi-content{
+        margin: 10px;
+    }
+    .t-arrow{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .testi-content{
+        margin-left: 0rem !important;
+        margin-top: 2rem;
+    }
+}
