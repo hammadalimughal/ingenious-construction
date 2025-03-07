@@ -29,14 +29,15 @@
         <div class="details-content">
           <div class="d-phone">
             <h6>Call Us</h6>
-            <p>(907) 262-2578</p>
-            <p>(907) 262-2578</p>
+            <p><a href="tel:+92 300-9285283">+92 300-9285283</a></p>
+            <p><a href="tel:+92 333-9285283">+92 333-9285283</a></p>
+            <p><a href="tel:+92 213-3484729">+92 213-3484729</a></p>
           </div>
-          <div class="d-email">
+          <div class="d-phone">
             <h6>Drop Us A Message</h6>
-            <h2 data-aos="fade-up" data-aos-duration="1000">hello@anglo.com</h2>
+            <p data-aos="fade-up" data-aos-duration="1000"><a href="mailto:info@ingenious-construction.com">info@ingenious-construction.com</a></p>
           </div>
-          <div class="d-social">
+          <!-- <div class="d-social">
             <h6>Social</h6>
             <div class="social-item">
               <a href="#">Facebook</a>
@@ -46,36 +47,42 @@
               <a href="#">Dibbble</a>
               <a href="#">Github</a>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
   </div>
   <div class="contact-form" data-aos="zoom-in">
-    <form>
+    <form method="POST" action="/api/email/sendmail">
       <div class="form-row">
         <div class="input-control">
           <label>Your First Name</label>
-          <input type="text" name="first-name" placeholder="First name here">
+          <input type="text" name="firstName" placeholder="First name here" required>
         </div>
         <div class="input-control">
           <label>Last Name</label>
-          <input type="text" name="last-name" placeholder="Last name here">
+          <input type="text" name="lastName" placeholder="Last name here" required>
         </div>
       </div>
       <div class="form-row">
         <div class="input-control">
           <label>Email Address</label>
-          <input type="email" placeholder="Add Email">
+          <input type="email" name="email" placeholder="Add Email" required>
         </div>
         <div class="input-control">
+          <label>Phone</label>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+        </div>
+      </div>
+      <div class="form-row">        
+        <div class="input-control w-100">
           <label>Subject</label>
-          <input type="text" name="subject" placeholder="How can we help you?">
+          <input type="text" name="subject" placeholder="How can we help you?" required>
         </div>
       </div>
       <div class="i-msg input-control">
         <label>Comments / Questions</label>
-        <input type="text" name="message" placeholder="Write Your Message Here...">
+        <textarea type="text" name="message" placeholder="Write Your Message Here..."></textarea>
       </div>
       <button type="submit">Send Message</button>
     </form>
@@ -86,28 +93,12 @@
 <!-- Stare Office Location -->
 <section class="p-tb-10">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-sm-12" data-aos="fade-up">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-12" data-aos="fade-up">
         <div class="office-box">
           <div class="box-inner box-inner-1">
-            <h6>Head Office</h6>
-            <h4>61973 State 415 Rte, Cohocton, New York 14826, USA</h4>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-12" data-aos="fade-up" data-aos-duration="1000">
-        <div class="office-box">
-          <div class="box-inner box-inner-2">
-            <h6>USA Office</h6>
-            <h4>61973 State 415 Rte, Cohocton, New York 14826, USA</h4>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-12 office-box" data-aos="fade-up" data-aos-duration="1200">
-        <div class="office-box">
-          <div class="box-inner box-inner-3">
-            <h6>Asia Office</h6>
-            <h4>61973 State 415 Rte, Cohocton, New York 14826, USA</h4>
+            <h6>Office Location</h6>
+            <h4><a href="https://maps.app.goo.gl/kMzKPWJCGKw7mTpN8" target="_blank">Mashrique center Office 520 block 14 Gulshan. E. Iqbal Karachi.</a></h4>
           </div>
         </div>
       </div>
@@ -116,18 +107,4 @@
 </section>
 <!-- End Office Location -->
 
-<!-- Start Image -->
-<div class="p-b-10">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 contact-img" data-aos="fade-right">
-        <img src="/assets/img/contact-h.jpg" alt="">
-      </div>
-      <div class="col-lg-6 jus-center contact-img" data-aos="fade-left">
-        <img src="/assets/img/contact-s.jpg" alt="">
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End Image -->
 <%- include('./includes/footer') %>

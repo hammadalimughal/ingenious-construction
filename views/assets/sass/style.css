@@ -1342,7 +1342,7 @@ button:hover a {
 ## CTA_Style
 ----------------------------------------------------------------*/
 .cta .cta-content {
-  background-image: url(/assets/img/cta.jpg);
+  background-image: url(/assets/img/cta.webp);
   background-position: center;
   -o-object-fit: cover;
      object-fit: cover;

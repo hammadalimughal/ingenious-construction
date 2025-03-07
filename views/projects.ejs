@@ -1,0 +1,47 @@
+<%- include('./includes/header', { title: 'Projects - Ingenious Construction' }) %>
+    <!-- Start Hero -->  
+    <div class="sec-breadcrumb">
+      <div class="container">
+        <div class="breadcrumb-content text-center">
+          <h2 class="ml14 p-t-5">
+            <span class="text-wrapper">
+              <span class="letters">Project</span>
+              <span class="line"></span>
+            </span>
+          </h2>
+          <ol class="breadcrumb text-upper">
+            <li class="m-right-10px">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="p-lr-1">/</li>
+            <li class="breadcrumb-item-active">Project</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <!-- End Hero -->
+
+    <!-- Start Portfolio -->
+    <section class="p-tb-10">
+      <div class="container">
+        <div class="row g-4">
+          <% projects.forEach((item,ind)=>{ %>
+            <div class="col-lg-4">
+              <div class="project p-col-1">
+                <div class="p-cap">
+                  <p>0<%- ind + 1 %></p>
+                  <p><%- item.category %></p>
+                </div>
+                <div class="project-image">
+                  <img src="<%- item.images[0] %>" alt="">
+                  <a href="/project/<%- item.url %>">View Project</a>
+                </div>
+                <h5><%- item.title %></h5>
+              </div>
+            </div>
+            <% }) %>
+        </div>
+      </div>
+    </section>
+    <!-- End Portfolio -->
+    <%- include('./includes/footer') %>

@@ -1,0 +1,134 @@
+[
+    {
+        "title": "RECLAIMED APPAREL",
+        "url": "reclaimed-apparel",
+        "category": "Office",
+        "images": [
+            "/assets/projects/reclaimed-apparel/1.jpg",
+            "/assets/projects/reclaimed-apparel/2.jpg",
+            "/assets/projects/reclaimed-apparel/3.jpg",
+            "/assets/projects/reclaimed-apparel/4.jpg",
+            "/assets/projects/reclaimed-apparel/5.jpg"
+        ]
+    },
+    {
+        "title": "Taj Villa Mardan",
+        "url": "taj-villa-mardan",
+        "category": "Residential",
+        "images": [
+            "/assets/projects/taj-villa-mardan/1.jpg",
+            "/assets/projects/taj-villa-mardan/2.jpg",
+            "/assets/projects/taj-villa-mardan/3.jpg",
+            "/assets/projects/taj-villa-mardan/4.jpg",
+            "/assets/projects/taj-villa-mardan/5.jpg",
+            "/assets/projects/taj-villa-mardan/6.jpg",
+            "/assets/projects/taj-villa-mardan/7.jpg",
+            "/assets/projects/taj-villa-mardan/8.jpg",
+            "/assets/projects/taj-villa-mardan/9.jpg",
+            "/assets/projects/taj-villa-mardan/10.jpg",
+            "/assets/projects/taj-villa-mardan/11.jpg",
+            "/assets/projects/taj-villa-mardan/12.jpg",
+            "/assets/projects/taj-villa-mardan/13.jpg",
+            "/assets/projects/taj-villa-mardan/14.jpg",
+            "/assets/projects/taj-villa-mardan/15.jpg",
+            "/assets/projects/taj-villa-mardan/16.jpg",
+            "/assets/projects/taj-villa-mardan/17.jpg",
+            "/assets/projects/taj-villa-mardan/18.jpg",
+            "/assets/projects/taj-villa-mardan/19.jpg",
+            "/assets/projects/taj-villa-mardan/20.jpg",
+            "/assets/projects/taj-villa-mardan/21.jpg",
+            "/assets/projects/taj-villa-mardan/22.jpg",
+            "/assets/projects/taj-villa-mardan/23.jpg",
+            "/assets/projects/taj-villa-mardan/24.jpg",
+            "/assets/projects/taj-villa-mardan/25.jpg",
+            "/assets/projects/taj-villa-mardan/26.jpg",
+            "/assets/projects/taj-villa-mardan/27.jpg"
+        ]
+    },
+    {
+        "title": "SALTEX PVT. LTD",
+        "url": "saltex-pvt-ltd",
+        "category": "Office",
+        "images": [
+            "/assets/projects/saltex-pvt-ltd/1.jpg",
+            "/assets/projects/saltex-pvt-ltd/2.jpg",
+            "/assets/projects/saltex-pvt-ltd/3.jpg",
+            "/assets/projects/saltex-pvt-ltd/4.jpg",
+            "/assets/projects/saltex-pvt-ltd/5.jpg",
+            "/assets/projects/saltex-pvt-ltd/6.jpg",
+            "/assets/projects/saltex-pvt-ltd/7.jpg",
+            "/assets/projects/saltex-pvt-ltd/8.jpg",
+            "/assets/projects/saltex-pvt-ltd/9.jpg",
+            "/assets/projects/saltex-pvt-ltd/10.jpg"
+        ]
+    },
+    {
+        "title": "ROSHAN RESIDENCY",
+        "url": "roshan-residency",
+        "category": "Residential",
+        "images": [
+            "/assets/projects/roshan-residency/1.jpg",
+            "/assets/projects/roshan-residency/2.jpg",
+            "/assets/projects/roshan-residency/3.jpg",
+            "/assets/projects/roshan-residency/4.jpg",
+            "/assets/projects/roshan-residency/5.jpg",
+            "/assets/projects/roshan-residency/6.jpg",
+            "/assets/projects/roshan-residency/7.jpg",
+            "/assets/projects/roshan-residency/8.jpg",
+            "/assets/projects/roshan-residency/9.jpg"
+        ]
+    },
+    {
+        "title": "QASR E SHEEREN GYM AREA",
+        "url": "qasr-e-sheeren-gym-area",
+        "category": "Residential",
+        "images": [
+            "/assets/projects/qasr-e-sheeren-gym-area/1.jpg",
+            "/assets/projects/qasr-e-sheeren-gym-area/2.jpg",
+            "/assets/projects/qasr-e-sheeren-gym-area/3.jpg",
+            "/assets/projects/qasr-e-sheeren-gym-area/4.jpg",
+            "/assets/projects/qasr-e-sheeren-gym-area/5.jpg",
+            "/assets/projects/qasr-e-sheeren-gym-area/6.jpg"
+        ]
+    },
+    {
+        "title": "Global Recycler",
+        "url": "global-recycler",
+        "category": "Industrial",
+        "images": [
+            "/assets/projects/global-recycler/1.jpg"
+        ]
+    },
+    {
+        "title": "HERITAGE RESTAURANT HIGHWAY",
+        "url": "heritage-restaurant-highway",
+        "category": "Restaurant",
+        "images": [
+            "/assets/projects/heritage-restaurant-highway/1.jpg",
+            "/assets/projects/heritage-restaurant-highway/2.jpg",
+            "/assets/projects/heritage-restaurant-highway/3.jpg",
+            "/assets/projects/heritage-restaurant-highway/4.jpg",
+            "/assets/projects/heritage-restaurant-highway/5.jpg",
+            "/assets/projects/heritage-restaurant-highway/6.jpg",
+            "/assets/projects/heritage-restaurant-highway/7.jpg",
+            "/assets/projects/heritage-restaurant-highway/8.jpg",
+            "/assets/projects/heritage-restaurant-highway/9.jpg"
+        ]
+    },
+    {
+        "title": "PAVILLION END CLUB GYM",
+        "url": "pavillion-end-club-gym",
+        "category": "GYM",
+        "images": [
+            "/assets/projects/pavillion-end-club-gym/1.jpg",
+            "/assets/projects/pavillion-end-club-gym/2.jpg",
+            "/assets/projects/pavillion-end-club-gym/3.jpg",
+            "/assets/projects/pavillion-end-club-gym/4.jpg",
+            "/assets/projects/pavillion-end-club-gym/5.jpg",
+            "/assets/projects/pavillion-end-club-gym/6.jpg",
+            "/assets/projects/pavillion-end-club-gym/7.jpg",
+            "/assets/projects/pavillion-end-club-gym/8.jpg",
+            "/assets/projects/pavillion-end-club-gym/9.jpg"
+        ]
+    }
+]
