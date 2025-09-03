@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Bilal",
+        "title": "CEO",
+        "org": "Company",
+        "desc": "The way IC has performed on this assignment has really pleased me. They maintain a tidy, productive work space and are very organized."
+    },
+    {
+        "id": 2,
+        "name": "Maryam",
+        "title": "CTO",
+        "org": "Company",
+        "desc": "IC has a goal in mind. They’re owner-driven. They’re aware of what we require. Everything has fulfilled my expectations, if not above them"
+    },
+    {
+        "id": 3,
+        "name": "Ahsan",
+        "title": "CFO",
+        "org": "Company",
+        "desc": "A professional, proactive, and efficient company. Great project management from the Contract Manager and swift and clear cost information provided by the team"
+    }
+]

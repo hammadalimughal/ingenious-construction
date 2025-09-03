@@ -222,7 +222,7 @@ ol>li {
 }
 
 .full-height {
-  background-image: url(../img/full-h-bg.jpg);
+  background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(../img/full-h-bg.jpg);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -639,6 +639,8 @@ button:hover a {
   position: fixed !important;
   width: 100%;
   z-index: 999;
+  background-color: rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
 }
 
 .cs_gescout_sticky {
@@ -646,7 +648,7 @@ button:hover a {
   top: -110px;
   opacity: 0;
   transition: all 0.4s ease;
-  background-color: #181818;
+  background-color: rgba(0,0,0,0.2);
 }
 
 .cs_gescout_show {
@@ -1495,8 +1497,8 @@ button:hover a {
   top: 0;
   height: 100%;
   object-fit: cover;
-  object-position: center right;
-  width: 50%;
+  object-position: center left;
+  width: 40%;
 }
 
 .category-list {
@@ -1815,6 +1817,7 @@ button:hover a {
 
 .a-about .co-progress {
   width: 400px;
+  max-width: 100%;
 }
 
 .a-about .co-progress .progress-bar {
@@ -2817,6 +2820,17 @@ button:hover a {
   .error-content span {
     font-size: 8rem !important;
   }
+  
+  .home-banner{
+    padding-top: 150px;
+  }
+  .cs-funfact .item-container .fun-item p{
+    font-size: 60px;
+    line-height: 70px;
+  }
+  body, html{
+    overflow-x: hidden;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2882,6 +2896,13 @@ button:hover a {
   .timmer li h5 {
     font-size: 16px;
   }
+  .home-banner .banner-main-image {
+    position: static;
+    width: auto;
+    height: 100vh;
+    object-fit: contain;
+    object-position: center center;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2889,13 +2910,15 @@ button:hover a {
     font-size: 26px !important;
     line-height: 26px !important;
   }
-
   .timmer li {
     margin-right: 20px !important;
   }
 
   .timmer li h5 {
     font-size: 16px;
+  }
+  .cs-services .services .service .content{
+    padding: 0;
   }
 }
 

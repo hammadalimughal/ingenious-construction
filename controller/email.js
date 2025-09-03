@@ -20,7 +20,7 @@ router.post('/sendmail', async (req, res) => {
             <div
             style="line-height:1.2;font-size:12px;color:#555555;font-family:Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif">
             <p style="margin:0;font-size:24px;line-height:1.2;word-break:break-word;margin-top:0;margin-bottom:0">
-                <span style="font-size:24px"><strong>New form submission on Precon Designs</strong></span>
+                <span style="font-size:24px"><strong>New form submission on Ingenious Construction</strong></span>
             </p>
             </div>
         </div>
@@ -208,7 +208,7 @@ router.post('/sendmail', async (req, res) => {
         </div>
     </div>`
         const info = await sendMail('info@ingenious-construction.com', subject, html)
-        res.status(200).send(info)
+        res.status(200).redirect('/thankyou')
     } catch (error) {
         res.status(400).send(error)
     }

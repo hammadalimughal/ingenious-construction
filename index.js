@@ -4,6 +4,7 @@ const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const requestIp = require('request-ip');
 const projects = require('./data/projects.json')
+const testimonials = require('./data/testimonials.json')
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
@@ -18,12 +19,12 @@ const PORT = process.env.PORT || 5678
 
 app.get('/', async (req, res) => {
     const user = req.user
-    res.render('index', { user, projects })
+    res.render('index', { user, projects, testimonials })
 })
 
 app.get('/about', async (req, res) => {
     const user = req.user
-    res.render('about', { user })
+    res.render('about', { user, testimonials })
 })
 
 app.get('/contact-us', async (req, res) => {
@@ -43,7 +44,12 @@ app.get('/projects', async (req, res) => {
 
 app.get('/project/:url', async (req, res) => {
     const user = req.user
-    res.render('project-detail', { user })
+    const {url} = req.params
+    const project = projects.find(project => project.url === url)
+    if (!project) {
+        return res.redirect('/404')
+    }
+    res.render('project-detail', { user, project })
 })
 
 app.get('/services', async (req, res) => {

@@ -1,4 +1,4 @@
-<%- include('./includes/header', { title: 'Home - Ingenious Construction' }) %>
+<%- include('./includes/header', { title: 'Home - SM Ingenious Construction (SMC- Private) Limited' }) %>
 
 <!-- Start Hero -->
 <!-- <div class="main-hero">
@@ -14,7 +14,7 @@
         <div class="hero-content">
           <div class="cs_circle_btn_wrap">
             <div class="cs_round_btn_wrap">
-              <a href="portfolio.html" class="cs_hero_btn cs_round_btn btn-item"><span></span>View Projects</a>
+              <a href="/projects" class="cs_hero_btn cs_round_btn btn-item"><span></span>View Projects</a>
             </div>
           </div>
           <div class="hero-subheading">
@@ -130,7 +130,7 @@
             </div>
             <div class="cs_circle_btn_wrap">
               <div class="cs_round_btn_wrap">
-                <a href="portfolio.html" class="cs_hero_btn cs_round_btn btn-item"><span></span>View Projects</a>
+                <a href="/projects" class="cs_hero_btn cs_round_btn btn-item"><span></span>View Projects</a>
               </div>
             </div>
           </div>
@@ -171,7 +171,7 @@
 <!-- Start Services -->
 <section class="cs-services p-t-10">
   <div class="container">
-    <div class="row">
+    <div class="row g-0">
       <div class="col-lg-6 col-sm-12 pe-lg-4">
         <div class="service-harea">
           <h2 class="ml13">Spaces Our Interior Design Services</h2>
@@ -185,7 +185,7 @@
               <span>Renovation & Remodeling --</span>
             </div>
           </div>
-          <a class="primary-btn" href="contact-us.html">Build Together<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a class="primary-btn" href="/contact-us">Build Together<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14.4273 4.55668C14.6225 4.36142 14.6225 4.04483 14.4273 3.84957L11.2453 0.667591C11.05 0.472329 10.7335 0.472329 10.5382 0.667591C10.3429 0.862853 10.3429 1.17944 10.5382 1.3747L13.3666 4.20312L10.5382 7.03155C10.3429 7.22681 10.3429 7.5434 10.5382 7.73866C10.7335 7.93392 11.05 7.93392 11.2453 7.73866L14.4273 4.55668ZM0.0737305 4.70312H14.0737V3.70312H0.0737305V4.70312Z" fill="white" />
             </svg></a>
         </div>
@@ -286,72 +286,29 @@
     <div class="owl-carousel owl-theme owl-loaded">
       <div class="owl-stage-outer">
         <div class="owl-stage">
+          <% testimonials.forEach((item,ind)=>{ %>
           <div class="owl-item">
             <div class="testimonial-item row">
-              <div class="col-lg-4  col-sm-12">
-                <img src="/assets/img/member-4.jpg" alt="">
-              </div>
-              <div class="col-lg-7 offset-1 col-sm-12">
+              <div class="col-12">
                 <div class="testi-content">
                   <svg width="101" height="89" viewBox="0 0 101 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.5" d="M80.1429 41.6574L80.1673 40.6336H79.1432H64.2206C61.9422 40.6336 60.0926 38.784 60.0926 36.5056V5.32723C60.0926 3.04885 61.9422 1.19922 64.2206 1.19922H95.399C97.6772 1.19922 99.527 3.04896 99.527 5.32723V29.8392C99.527 41.7955 98.4727 51.1392 96.4013 57.9363L97.3579 58.2278L96.4013 57.9363C94.3427 64.6917 90.5327 70.7633 84.9405 76.1643C80.3621 80.582 74.7341 84.2318 68.0393 87.1241C65.987 88.0094 63.6195 87.1237 62.6623 85.1104L58.9712 77.318C57.977 75.2135 58.9009 72.7074 61.013 71.7787L61.0147 71.778C66.8609 69.1948 71.3077 65.8884 74.2689 61.8328C78.0133 56.7082 79.9448 49.9573 80.1429 41.6574Z" stroke="#FF5101" stroke-width="2" />
                     <path opacity="0.5" d="M23.0987 41.6574L23.1231 40.6336H22.099H7.17647C4.89807 40.6336 3.04845 38.784 3.04845 36.5056V5.32723C3.04845 3.04885 4.89809 1.19922 7.17647 1.19922H38.3548C40.6333 1.19922 42.4828 3.04884 42.4828 5.32723V29.8391C42.4828 41.8893 41.4282 51.2623 39.3578 58.0062C37.3003 64.7081 33.4714 70.759 27.8282 76.1609C23.2154 80.5728 17.6152 84.2232 11.0028 87.1048C8.95294 87.9975 6.56565 87.1042 5.60788 85.0898L1.92703 77.318C0.932811 75.2135 1.85672 72.7074 3.96884 71.7787L3.97051 71.778C9.81662 69.1948 14.2636 65.8884 17.2248 61.8328C20.9692 56.7082 22.9006 49.9573 23.0987 41.6574Z" stroke="#FF5101" stroke-width="2" />
                   </svg>
-                  <p>An interior design agency can create content that showcases its work, highlights design trends, and provides educational resources for clients and followers. Some potential content ideas for an interior design agency An interior design agency can create content that showcases its work, highlights design trends, and provides educational resources for clients and followers. Some potential content ideas</p>
+                  <p><%- item.desc %></p>
                   <span></span>
                   <div class="client-details">
-                    <h5>Anglo Saxon</h5>
-                    <p>From USA</p>
+                    <h5><%- item.name %></h5>
+                    <!-- <p>From USA</p> -->
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="owl-item">
-            <div class="testimonial-item row">
-              <div class="col-lg-4  col-sm-12">
-                <img src="/assets/img/member-5.jpg" alt="">
-              </div>
-              <div class="col-lg-7 offset-1 col-sm-12">
-                <div class="testi-content">
-                  <svg width="101" height="89" viewBox="0 0 101 89" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.5" d="M80.1429 41.6574L80.1673 40.6336H79.1432H64.2206C61.9422 40.6336 60.0926 38.784 60.0926 36.5056V5.32723C60.0926 3.04885 61.9422 1.19922 64.2206 1.19922H95.399C97.6772 1.19922 99.527 3.04896 99.527 5.32723V29.8392C99.527 41.7955 98.4727 51.1392 96.4013 57.9363L97.3579 58.2278L96.4013 57.9363C94.3427 64.6917 90.5327 70.7633 84.9405 76.1643C80.3621 80.582 74.7341 84.2318 68.0393 87.1241C65.987 88.0094 63.6195 87.1237 62.6623 85.1104L58.9712 77.318C57.977 75.2135 58.9009 72.7074 61.013 71.7787L61.0147 71.778C66.8609 69.1948 71.3077 65.8884 74.2689 61.8328C78.0133 56.7082 79.9448 49.9573 80.1429 41.6574Z" stroke="#FF5101" stroke-width="2" />
-                    <path opacity="0.5" d="M23.0987 41.6574L23.1231 40.6336H22.099H7.17647C4.89807 40.6336 3.04845 38.784 3.04845 36.5056V5.32723C3.04845 3.04885 4.89809 1.19922 7.17647 1.19922H38.3548C40.6333 1.19922 42.4828 3.04884 42.4828 5.32723V29.8391C42.4828 41.8893 41.4282 51.2623 39.3578 58.0062C37.3003 64.7081 33.4714 70.759 27.8282 76.1609C23.2154 80.5728 17.6152 84.2232 11.0028 87.1048C8.95294 87.9975 6.56565 87.1042 5.60788 85.0898L1.92703 77.318C0.932811 75.2135 1.85672 72.7074 3.96884 71.7787L3.97051 71.778C9.81662 69.1948 14.2636 65.8884 17.2248 61.8328C20.9692 56.7082 22.9006 49.9573 23.0987 41.6574Z" stroke="#FF5101" stroke-width="2" />
-                  </svg>
-                  <p>An interior design agency can create content that showcases its work, highlights design trends, and provides educational resources for clients and followers. Some potential content ideas for an interior design agency An interior design agency can create content that showcases its work, highlights design trends, and provides educational resources for clients and followers. Some potential content ideas</p>
-                  <span></span>
-                  <div class="client-details">
-                    <h5>Anglo Saxon</h5>
-                    <p>From USA</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="owl-item">
-            <div class="testimonial-item row">
-              <div class="col-lg-4  col-sm-12">
-                <img src="/assets/img/member-1.jpg" alt="">
-              </div>
-              <div class="col-lg-7 offset-1 col-sm-12">
-                <div class="testi-content">
-                  <svg width="101" height="89" viewBox="0 0 101 89" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.5" d="M80.1429 41.6574L80.1673 40.6336H79.1432H64.2206C61.9422 40.6336 60.0926 38.784 60.0926 36.5056V5.32723C60.0926 3.04885 61.9422 1.19922 64.2206 1.19922H95.399C97.6772 1.19922 99.527 3.04896 99.527 5.32723V29.8392C99.527 41.7955 98.4727 51.1392 96.4013 57.9363L97.3579 58.2278L96.4013 57.9363C94.3427 64.6917 90.5327 70.7633 84.9405 76.1643C80.3621 80.582 74.7341 84.2318 68.0393 87.1241C65.987 88.0094 63.6195 87.1237 62.6623 85.1104L58.9712 77.318C57.977 75.2135 58.9009 72.7074 61.013 71.7787L61.0147 71.778C66.8609 69.1948 71.3077 65.8884 74.2689 61.8328C78.0133 56.7082 79.9448 49.9573 80.1429 41.6574Z" stroke="#FF5101" stroke-width="2" />
-                    <path opacity="0.5" d="M23.0987 41.6574L23.1231 40.6336H22.099H7.17647C4.89807 40.6336 3.04845 38.784 3.04845 36.5056V5.32723C3.04845 3.04885 4.89809 1.19922 7.17647 1.19922H38.3548C40.6333 1.19922 42.4828 3.04884 42.4828 5.32723V29.8391C42.4828 41.8893 41.4282 51.2623 39.3578 58.0062C37.3003 64.7081 33.4714 70.759 27.8282 76.1609C23.2154 80.5728 17.6152 84.2232 11.0028 87.1048C8.95294 87.9975 6.56565 87.1042 5.60788 85.0898L1.92703 77.318C0.932811 75.2135 1.85672 72.7074 3.96884 71.7787L3.97051 71.778C9.81662 69.1948 14.2636 65.8884 17.2248 61.8328C20.9692 56.7082 22.9006 49.9573 23.0987 41.6574Z" stroke="#FF5101" stroke-width="2" />
-                  </svg>
-                  <p>An interior design agency can create content that showcases its work, highlights design trends, and provides educational resources for clients and followers. Some potential content ideas for an interior design agency An interior design agency can create content that showcases its work, highlights design trends, and provides educational resources for clients and followers. Some potential content ideas</p>
-                  <span></span>
-                  <div class="client-details">
-                    <h5>Anglo Saxon</h5>
-                    <p>From USA</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <% }) %>
         </div>
       </div>
-      <div class="t-arrow">
+      <div class="btns t-arrow">
         <div class="customNextBtn">
           <div class="left">
             <svg width="98" height="97" viewBox="0 0 98 97" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -372,7 +329,7 @@
     </div>
   </div>
 </section>
-<!-- Start Testimonial -->
+<!-- End Testimonial -->
 
 <!-- Start Client -->
 <section class="p-t-10">
@@ -407,7 +364,7 @@
 <!-- End Client -->
 
 <!-- Start Team -->
-<section class="p-t-10">
+<!-- <section class="p-t-10">
   <div class="container">
     <div class="row t-content">
       <div class="col-lg-4 cs-t-head col-sm-6">
@@ -475,7 +432,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End Team -->
 
 <!-- Start Fun Fact -->
@@ -527,7 +484,7 @@
         <h2 class="wow animate__fadeInUp" data-wow-duration="0.7s">Competent, Integrated and Proven: Our Quality Never Goes Out Of Style</h2>
         <p class="p-b-2">Every component of Ingenious construction is meticulously crafted, synergizing seamlessly to bolster our brand’s narrative.</p>
         <div class="p-t-1">
-          <a class="primary-btn" href="contact-us.html">Build Together <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a class="primary-btn" href="/contact-us">Build Together <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14.4273 4.55668C14.6225 4.36142 14.6225 4.04483 14.4273 3.84957L11.2453 0.667591C11.05 0.472329 10.7335 0.472329 10.5382 0.667591C10.3429 0.862853 10.3429 1.17944 10.5382 1.3747L13.3666 4.20312L10.5382 7.03155C10.3429 7.22681 10.3429 7.5434 10.5382 7.73866C10.7335 7.93392 11.05 7.93392 11.2453 7.73866L14.4273 4.55668ZM0.0737305 4.70312H14.0737V3.70312H0.0737305V4.70312Z" fill="white" />
             </svg></a>
         </div>

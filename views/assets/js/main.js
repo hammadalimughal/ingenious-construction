@@ -69,7 +69,14 @@ $(document).ready(function () {
     loop: true,
     margin: 10,
     nav: false,
-    items: 1,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      767: {
+        items: 3,
+      },
+    },
     dots: false,
   });
 
